@@ -9,10 +9,7 @@ tz_blacklist = ["KA_Suitcase_Nuke", "SSPCM", "NSS_Admin_Console", "balca_debug_t
 tz_banned_names = ["Admin","Moderator","Nigger","Fuck","owner","Owner","OWNER","FUCK","ADMIN","Administrator","administrator","kike","asshole","cunt","vagina"]
 
 tz_exemptPlayers = [
-	"76561198068745049"/* Undyne */,
-	"76561197971214712"/* Bigwavedave */,
-	"76561198124393064"/* Danny */,
-	"76561197972721941"/* BigSky */,
+	"76561198165541461","76561198159316342", "76561198341113897", "76561198282680445",
 	];
 	
 // Message for player if caught with a blacklisted mod goes below

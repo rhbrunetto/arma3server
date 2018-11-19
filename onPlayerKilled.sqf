@@ -37,6 +37,7 @@ https://forums.bohemia.net/forums/topic/215850-compilation-list-of-my-gf-scripts
 
 
 //A3\Missions_F_EPA\data\sounds\combat_deafness
+/*
 playSound"combat_deafness";
 
 [] spawn 
@@ -51,3 +52,4 @@ playSound"combat_deafness";
 //["<t size='2.5'>WASTED !</t>",0,0.3,2,0,0,7017] spawn bis_fnc_dynamicText;
 
 titleText ["<t color='#ff0000' size='6'>You are Dead!</t>", "PLAIN", -1, true, true];
+*/

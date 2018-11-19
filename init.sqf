@@ -15,7 +15,7 @@ if(!isDedicated) then {
 }else{
 	WaitUntil{!isNil "PO3_core_init"};
 };
-
+/*
 if(!isDedicated && !PO3_debug) then {
 	playMusic "LeadTrack01a_F";
 	0 fadeMusic 1;
@@ -23,6 +23,7 @@ if(!isDedicated && !PO3_debug) then {
 	if!(PO3_debug) then { [270,900,150] call PO3_fnc_introsequence };
 	[] spawn { sleep 20; 8 fadeMusic 0; };
 };
+*/
 
 [
 		60, // seconds to delete dead bodies (0 means don't delete) 
@@ -53,7 +54,7 @@ enableEnvironment FALSE;
 
 if (isServer) then {
  [] execVM "time.sqf";  // Time
-[] execVM "sa_recoil.sqf";
+//[] execVM "sa_recoil.sqf";
 
  }; 
 
@@ -65,5 +66,5 @@ forceWeatherChange;
 999999 setOvercast 0;
 999999 setFog 0;
 
-_null =[] execVM "scripts\pilotCheck_air.sqf"; 
-_null =[] execVM "scripts\pilotCheck.sqf"; 
+//_null =[] execVM "scripts\pilotCheck_air.sqf"; 
+//_null =[] execVM "scripts\pilotCheck.sqf"; 

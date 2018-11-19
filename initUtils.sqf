@@ -3,7 +3,7 @@ waitUntil {(vehicle player) == player};
 waitUntil {(getPlayerUID player) != ""};
 
 uidListA = [
-	"76561197971214712"/* =BR=Alexandre */,
+	"76561198165541461","76561198159316342", "76561198341113897", "76561198282680445",
 	
 	"_SP_PLAYER_"
 	];

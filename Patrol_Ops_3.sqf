@@ -119,19 +119,20 @@ if(PO3CLI) then {
 	};
 };
 [] spawn PO3_fnc_protector;
-_null =[] execVM "scripts\pilotCheck_air.sqf"; 
-_null =[] execVM "scripts\pilotCheck.sqf"; 
+_null =[] execVM "scripts\pilotCheck_air.sqf";
+//_null =[] execVM "scripts\pilotCheck.sqf"; 
 
-[] execVM "sa_recoil.sqf";
+//[] execVM "sa_recoil.sqf";
 [] execVM "eject.sqs";
 [] execVM "time.sqf"; 
 [] execVM "auxslingloading.sqf";
+[] execVM "GF_Holster\GF_Holster.sqf";
 
 player enableFatigue FALSE;
 player enableStamina FALSE;
 player forceWalk FALSE;
-player setCustomAimCoef 0.30;
-player setUnitRecoilCoefficient 1;
+//player setCustomAimCoef 0.30;
+//player setUnitRecoilCoefficient 1;
 enableEnvironment FALSE;
 
 
@@ -148,11 +149,7 @@ if (local player) then {
   player enableFatigue false; 
   player addEventhandler ["Respawn", {player enableFatigue false}]; 
 };
-waituntil {!(IsNull (findDisplay 46))};  _keyDown = (findDisplay 46) displayAddEventHandler ["KeyDown", "if (_this select 1 == 57) then {
-if (!(isTouchingGround player) and (vehicle player == player)) then {
-[] spawn {player switchCamera 'EXTERNAL';Player SwitchMove 'AswmPercMrunSnonWnonDf_AswmPercMstpSnonWnonDnon';addCamShake [4, 2, 20];sleep 0.7;playSound3D ['@SCS\Sound\Parachute.ogg', Player, false, GetPosASL Player,5, 1, 250];titleText ['', 'White IN', 0.6];addCamShake [2, 2, 10];chute = createVehicle ['Steerable_Parachute_F', position Player, [], 0, 'Fly'];chute setPos position player;player moveIndriver chute;  chute allowDamage false;};   
-};
-}"]; 
+waituntil {!(IsNull (findDisplay 46))};  _keyDown = (findDisplay 46) displayAddEventHandler ["KeyDown", "switch(_this select 1) do {case 57:{if (!(isTouchingGround player) and (vehicle player == player)) then {[] spawn {player switchCamera 'EXTERNAL';Player SwitchMove 'AswmPercMrunSnonWnonDf_AswmPercMstpSnonWnonDnon';addCamShake [4, 2, 20];sleep 0.7;playSound3D ['@SCS\Sound\Parachute.ogg', Player, false, GetPosASL Player,5, 1, 250];titleText ['', 'White IN', 0.6];addCamShake [2, 2, 10];chute = createVehicle ['Steerable_Parachute_F', position Player, [], 0, 'Fly'];chute setPos position player;player moveIndriver chute;  chute allowDamage false;};};};;"]; 
 
-[] execVM "GF_Killfeed\GF_Killfeed.sqf";
-[] execVM "GF_Killfeed\GF_Headshot.sqf";
+//[] execVM "GF_Killfeed\GF_Killfeed.sqf";
+//[] execVM "GF_Killfeed\GF_Headshot.sqf";

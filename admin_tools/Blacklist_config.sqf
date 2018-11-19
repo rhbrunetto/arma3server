@@ -17,23 +17,7 @@ tz_banned_names = ["Admin","Moderator","Nigger","Fuck","owner","Owner","OWNER","
 tz_admin_tag = "{TRC}";
 
 tz_exemptPlayers = [
-	"76561198035729712"/* Assassinzz */,
-	"76561198174395718"/* Halvix */,
-	"76561198143973255"/* Elikat */,
-	"76561198297150643"/* Grunt */,
-	"76561198064498681"/* God Dammit */,
-	"76561197992961023"/* CrushDawg */,
-	"76561197965061649"/* Ashnik */,
-	"76561198077950994"/* Atlas */,
-	"76561198066322258"/* Meanie Martini */,
-	"76561198253029444"/* Aidan */,
-	"76561198026000500"/* VVerker */,
-	"76561198037996498"/* Kris */,
-	"76561198077846047"/* Juggernaut */,
-	"76561197971214712"/* Bigwavedave */,
-	"76561198028066267"/* Ron Swanson */,
-	"76561198081864510"/* 3rd EchelonActual */,
-	"76561197982428896"/* Kadaire */
+	"76561198165541461","76561198159316342", "76561198341113897", "76561198282680445"
 	];
 	
 // Message for player if caught with a blacklisted mod goes below
