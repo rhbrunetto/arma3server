@@ -1,0 +1,5 @@
+player allowdamage false;
+moveout player;
+player allowdamage true;
+
+

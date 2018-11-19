@@ -1,0 +1,36 @@
+_vehicle = _this;
+
+_vehicle addWeaponTurret ["mortar_155mm_AMOS", [-1]];
+_vehicle addMagazineTurret ["2Rnd_155mm_Mo_Cluster", [-1]];
+_vehicle addMagazineTurret ["2Rnd_155mm_Mo_Cluster", [-1]];
+_vehicle addMagazineTurret ["2Rnd_155mm_Mo_Cluster", [-1]];
+_vehicle addMagazineTurret ["2Rnd_155mm_Mo_Cluster", [-1]];
+_vehicle addMagazineTurret ["2Rnd_155mm_Mo_guided", [-1]];
+_vehicle addMagazineTurret ["2Rnd_155mm_Mo_guided", [-1]];
+_vehicle addWeaponTurret ["Gatling_30mm_Plane_CAS_01_F", [-1]];
+_vehicle addMagazineTurret ["1000Rnd_Gatling_30mm_Plane_CAS_01_F", [-1]];
+_vehicle addMagazineTurret ["1000Rnd_Gatling_30mm_Plane_CAS_01_F", [-1]];
+_vehicle addMagazineTurret ["1000Rnd_Gatling_30mm_Plane_CAS_01_F", [-1]];
+_vehicle addMagazineTurret ["1000Rnd_Gatling_30mm_Plane_CAS_01_F", [-1]];
+_vehicle setVariable ["BIS_enableRandomization", false];
+_vehicle setObjectTextureGlobal [0, "assassin\pics\Pawnee.jpg"];
+_vehicle setObjectTextureGlobal [1, "assassin\pics\Pawnee.jpg"];
+_vehicle setObjectTextureGlobal [2, "assassin\pics\Pawnee.jpg"];
+_vehicle setObjectTextureGlobal [3, "assassin\pics\Pawnee.jpg"];
+_vehicle addWeaponTurret ["CMFlareLauncher",[-1]];
+_vehicle addMagazineTurret ["240Rnd_CMFlare_Chaff_Magazine", [-1]];
+_vehicle addMagazineTurret ["240Rnd_CMFlare_Chaff_Magazine", [-1]];
+_vehicle addMagazineTurret ["240Rnd_CMFlare_Chaff_Magazine", [-1]];
+_vehicle addMagazineTurret ["240Rnd_CMFlare_Chaff_Magazine", [-1]];
+_vehicle addWeaponTurret ["GBU12BombLauncher", [-1]];
+_vehicle addMagazineTurret ["2Rnd_GBU12_LGB", [-1]];
+_vehicle addMagazineTurret ["2Rnd_GBU12_LGB", [-1]];
+_vehicle addMagazineTurret ["2Rnd_GBU12_LGB", [-1]];
+_vehicle removeMagazineTurret ["24Rnd_missiles", [-1]];
+_vehicle removeWeaponTurret ["missiles_DAR", [-1]];
+_vehicle addWeaponTurret ["missiles_titan", [-1]];
+_vehicle addMagazineTurret ["5Rnd_GAT_missiles", [-1]];
+_vehicle addMagazineTurret ["5Rnd_GAT_missiles", [-1]];
+_vehicle addMagazineTurret ["4Rnd_GAA_missiles", [-1]];
+_vehicle addMagazineTurret ["4Rnd_GAA_missiles", [-1]];
+

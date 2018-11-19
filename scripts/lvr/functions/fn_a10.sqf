@@ -1,0 +1,1 @@
+_this execVM "scripts\lvr\a10.sqf";

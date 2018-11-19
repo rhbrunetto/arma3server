@@ -1,0 +1,1 @@
+_this execVM "scripts\lvr\kuma.sqf";
